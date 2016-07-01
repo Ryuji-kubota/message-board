@@ -1,5 +1,4 @@
-<h1>Messages#index</h1>
-<p>Find me in app/views/messages/index.html.erb</p>
+<h1>メッセージボード</h1>
 
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -14,13 +13,13 @@
       <% end %>
    </div>
 </div>
-
-
+以下に名前と内容を入力してください
 <%= form_for(@message) do |f| %>
   名前：
   <%= f.text_field :name %>
   
   内容：
-  <%= f.text_field :body %>
+  <%= f.text_area :body %>
   <%= f.submit class: "btn btn-sm btn-primary" %>
   <% end %>
+ 
