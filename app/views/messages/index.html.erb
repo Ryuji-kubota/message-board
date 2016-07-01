@@ -17,7 +17,7 @@
 <h5>以下に名前とメッセージを入力してください</h5>
 <%= form_for(@message) do |f| %>
   名前：
-  <%= f.text_area :name  %>
+  <%= f.text_field :name  %>
   <br>
   内容：
   <%= f.text_area :body %>
